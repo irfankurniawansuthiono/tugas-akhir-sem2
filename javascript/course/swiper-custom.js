@@ -9,5 +9,3 @@ const params = {
 }
 
 Object.assign(swiperEl, params)
-
-swiperEl.initialize();
