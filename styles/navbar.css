@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
+body{
+    font-family: 'Poppins', sansserif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+/* NAVBAR */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: absolute;
+    background-color: #252525;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar .logo h1{
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+.navbar .logo h1:hover{
+    color: rgba(244, 42, 96, 0.901);
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.navbar .logo a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.navbar .checkbox-navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: -20rem;
+    padding: 1rem;
+    gap: .5rem;
+    z-index: -5;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: #252525;
+    height: fit-content;
+    transition: .5s ease-in;
+    box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 7px 5px -1px rgba(3, 3, 3, 0.75);
+    -moz-box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
+}
+.navbar .checkbox-navbar .hamburger{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: .3rem;
+    transition: all 300ms ease;
+    cursor: pointer;
+    padding: .5rem;
+    width: fit-content ;
+    height: fit-content ;
+    z-index: 9999;
+}
+.navbar .checkbox-navbar .hamburger:hover {
+    background-color: rgba(244, 42, 96, 0.901);
+}
+
+.navbar .checkbox-navbar #hamburger-checkbox:checked ~ label ~ ul{
+    display: flex;
+    height: fit-content;
+    /* opacity: 1; */
+    top: 4rem;
+
+}
+
+.navbar ul li{
+    transition: all 200ms ease;
+    padding:1rem 2rem;
+    border-radius: 40px;
+
+}
+ul li:hover{
+    background-color: rgba(245,245,245,.5);
+}
+.navbar ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.navbar ul>.login-signup{
+    display: flex;
+    gap: 0.85rem;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+}
+
+/* signup */
+.button-signup{
+    padding: 0.5rem 2rem;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid white;
+    overflow: hidden;
+    border-radius: 30px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-txt-signup {
+    z-index: 2;
+    position: relative;
+    font-weight: 800;
+}
+
+.type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: white;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: 1;
+}
+
+.button-signup:hover {
+    color: black;
+    border: 2px solid white;
+    z-index: 2;
+}
+
+.type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+}
+
+/* LOGIN */
+.button-login {
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #252525;
+    background-color: whitesmoke;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.button-login:hover {
+    background-color: #252525;
+    border: 2px solid white;
+    color: white;
+}
+
+/* hamburger menu */
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: .3s ease-in-out;
+}
+
+#hamburger-checkbox {
+    display: none;
+}
+
+#hamburger-checkbox:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+#hamburger-checkbox:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-checkbox:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+/* js css for navbar when scrolled */
+.scrolled{
+    background-color: #252525 !important;
+    box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
+}
+.active{
+    background-color: rgba(244, 42, 96, 0.901);
+    border-radius: 40px;
+}
+/* media section */
+@media only screen and (min-width: 992px) {
+    .navbar{
+        background-color: transparent;
+        transition: .3s ease-in-out;
+    }
+    .navbar .hamburger{
+        display: none!important;
+    }
+    .navbar.checkbox-navbar{
+        height: fit-content;
+    }
+    .navbar .checkbox-navbar ul{
+        box-shadow: none;
+        padding: 0px;
+        display: flex;
+        position: static;
+        gap: .85rem;
+        align-items: center;
+        flex-direction: row;
+        opacity: 1;
+        transform: translateY(0);
+        background-color: transparent !important;
+    }
+    .navbar .checkbox-navbar ul li{
+        display: flex;
+    }
+    .navbar .checkbox-navbar .login-signup{
+        padding: 0px;
+        padding-left: .5rem;
+    }
+}

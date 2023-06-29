@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
+/* UNIVERSAL CSS */
+*{
+    scroll-behavior: smooth;
+}
+
+/* read more button */
+.container-about2 .read-button, .container-about .read-button{
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    font-weight: bolder;
+    color: white;
+    background-color: #ff135a;
+    text-transform: capitalize;
+    transition: all .5s ease;
+    cursor: pointer;
+    font-weight: 800;
+    border: none;
+}
+.container-about2 .read-button:hover,
+.container-about .read-button:hover {
+    background-color: #252525;
+    color: white;
+}
+
+/* about-1 */
+main .container-about{
+    padding: 4rem 2rem;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    width: 100% !important;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    box-sizing: border-box !important;
+    justify-content: center;
+}
+/* about header */
+.container-about .head-about{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.container-about .head-about h1{
+    font-weight: bolder;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.container-about .head-about p{
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* card */
+.container-about .card{
+    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    gap: 1rem;
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+    transition: .3s ease-in-out;
+    justify-content: center;
+    border-radius: 50px;
+    flex-direction: column;
+}
+.container-about .card h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.container-about .card p{
+    line-height: 1.5rem;
+}
+.container-about .card .logo-card{
+    width: 100%;
+}
+.container-about .card .logo-card img{
+    width: 2rem;
+    border-radius: 50%;
+    background-color: grey;
+    padding: .3rem;
+    transition: .3s ease-in-out;
+}
+.container-about .card:hover{
+    border: 2px solid rgba(244, 42, 96, 0.901);
+}
+.container-about .card:hover img{
+    background-color: rgba(244, 42, 96, 0.901);
+}
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* media query about 1 */
+@media only screen and (max-width:660px){
+    main .container-about{
+        justify-content: center;
+    }
+    main .container-about .head-about{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:661px) {
+    main .container-about {
+        justify-content: center;
+        flex-direction: row !important;
+    }
+    main .container-about .head-about{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1237px){
+    main .container-about{
+        padding:4.6rem 3rem;
+        justify-content: center;
+    }
+    main .container-about .card{
+        width: 270px;
+        height: 400px;
+    }
+    .container-about .head-about{
+        width: 20% !important;
+    }
+    .container-about .head-about h1{
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+}
+
+/* about 2 */
+main .container-about2{
+    padding: 0rem 2rem 4.6rem 2rem;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    font-family: "Poopins", sans-serif;
+    display: flex;
+    width: 100% !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    box-sizing: border-box !important;
+}
+
+.container-about2 .container-about2-content h5{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+    color: rgba(244, 42, 96, 0.901);
+}
+.container-about2 .container-about2-content h1{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.container-about2 .container-about2-content p{
+    font-size: .9rem;
+    line-height: 1rem;
+    margin-top: .5rem;
+    text-align: justify;
+}
+lottie-player{
+    width: 300px;
+    height: 300px;
+}
+.container-about2 .container-about2-content .content-icon{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+}
+.container-about2 .container-about2-content .content-icon img{
+    width: 16px;
+    height: 16px;
+    margin-right: 1rem;
+}
+@media only screen and (min-width:800px){
+    main .container-about2{
+        padding: 0rem 3rem 4rem 3rem;
+        flex-direction: row;
+    }
+    lottie-player {
+        width: 500px;
+        height: 500px;
+    }
+}
+@media only screen and (min-width:1000px){
+
+    .container-about2 .container-about2-content h5 {
+        font-size: 2rem;
+    }
+    .container-about2 .container-about2-content h1{
+        font-size: 2rem;
+    }
+    .container-about2 .container-about2-content p{
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+    .container-about2 .container-about2-content .content-icon{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+    }
+    main .container-about2{
+        padding: 0rem 3rem 4.6rem 3rem;
+    }
+}

@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
+
+.container-contact{
+    padding: 4rem 2rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: "Poppins", sans-serif !important;
+}
+.container-contact h1{
+    color: #353535;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+form label{
+    font-weight: normal;
+}
+form input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    height: 20px;
+    transition: .3s ease-in-out;
+    border-bottom: 2px solid #353535;
+}
+form input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(244, 42, 96);
+}
+form .isi-form{
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+form textarea{
+    resize: none;
+    overflow: auto;
+    border: 2px solid #353535;
+    border-radius: 5px;
+}
+form textarea:focus{
+    outline: none;
+    border: 2px solid rgb(244, 42, 96);
+}
+
+/* button */
+.contact-send-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.container-contact button {
+    font-family: inherit;
+    font-size: 20px;
+    width: 115px;
+    background: rgb(244, 42, 96);
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.container-contact button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.container-contact button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container-contact button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.container-contact button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.container-contact button:hover span {
+    transform: translateX(5em);
+}
+
+.container-contact button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+/* media query section */
+@media only screen and (min-width: 500px){
+    form{
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 600px){
+    form{
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 700px){
+    form{
+        width: 40%;
+    }
+}
+@media only scren and (min-width:1000px){
+    .container-contact {
+        padding: 6rem 2rem !important;
+        border: 5px solid blue;
+    }
+}

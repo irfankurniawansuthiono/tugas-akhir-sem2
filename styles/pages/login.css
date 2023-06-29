@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
+body{
+    background-color: whitesmoke;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    box-sizing: border-box;
+.container{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+}
+
+.form {
+    background-color: rgba(255,255,255,0.7);
+    padding: 2rem;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+}
+
+.container .back{
+    display: flex;
+    gap: .5rem;
+    width: 90%;
+    margin-bottom: .3rem;
+}
+.container.back:hover{
+    color: #ca793f;
+}
+
+.container .back a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.signup {
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+}
+
+.form--input {
+    width: 100%;
+    margin-bottom: 1.25em;
+    height: 20px;
+    padding: 0.8em;
+    font-family: 'Mukta', sans-serif;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    transition: all 300ms ease;
+}
+
+.form--input::placeholder {
+    color: black;
+    opacity: 1;
+  }
+
+.form--input:focus::placeholder {
+    opacity: .7;
+}
+
+.form--input:focus {
+    border-bottom: 1px solid grey;
+    outline: none;
+}
+
+.form--marketing {
+    display: flex;
+    margin-bottom: 1.25em;
+    align-items: center;
+}
+
+.form--marketing > input {
+    margin-right: 0.625em;
+}
+
+.form--marketing > label {
+    color: black;
+    font-size: 1rem;
+}
+
+.checkbox, input[type="checkbox"] {
+    accent-color: grey;
+}
+
+.form--submit {
+    width: 50%;
+    padding: 0.625em;
+    border-radius: 5px;
+    color: white;
+    background-color: grey;
+    border: 1px dashed grey;
+    cursor: pointer;
+}
+
+.form--submit:hover {
+    color: grey;
+    background-color: white;
+    border: 1px dashed grey;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@media only screen and (min-width: 768px){
+    .form{
+        width: 30%;
+        padding: 4rem;
+    }
+    .container .back{
+        width: 48%;
+    }
+}
+@media only screen and (min-width: 1089px) {
+    .form{
+        width: 20%;
+        padding: 4rem;
+    }
+    .container{
+        padding: 2rem 0;
+    }
+    .container .back{
+        width: 30%;
+    }
+    .form--marketing > label {
+        color: black;
+        font-size: 1rem;
+    }
+}

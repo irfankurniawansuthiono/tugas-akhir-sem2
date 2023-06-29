@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- css loading -->
+        <link rel="stylesheet" href="styles/loading.css">
+
+        <!-- css reset -->
+        <link rel="stylesheet" href="styles/cssreset.css">
+
+        <!-- css navbar -->
+        <link rel="stylesheet" href="styles/navbar.css">
+
+        <!-- section home css -->
+        <link rel="stylesheet" href="styles/section css/home.css">
+
+        <!-- section about css -->
+        <link rel="stylesheet" href="styles/section css/about.css">
+
+        <!-- section course css -->
+        <link rel="stylesheet" href="styles/section css/course.css">
+
+        <!-- section contact css -->
+        <link rel="stylesheet" href="styles/section css/contact.css">
+        <!-- swiper js css -->
+        <link rel="stylesheet" href="styles/section css/swiperjs.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div id="loading">
+                    <div style="--size: 64px; --dot-size: 6px; --dot-count: 6; --color:  rgba(244, 42, 96, 0.901); --speed: 1s; --spread: 60deg;"
+                        class="dots">
+                        <div style="--i: 0;" class="dot"></div>
+                        <div style="--i: 1;" class="dot"></div>
+                        <div style="--i: 2;" class="dot"></div>
+                        <div style="--i: 3;" class="dot"></div>
+                        <div style="--i: 4;" class="dot"></div>
+                        <div style="--i: 5;" class="dot"></div>
+                    </div>
+                </div>
+                <nav class="navbar" id="navbar">
+                    <div class="logo">
+                        <a href="/index.html">
+                            <h1>BiimBeL</h1>
+                        </a>
+                    </div>
+                    <div class="checkbox-navbar">
+                        <input type="checkbox" id="hamburger-checkbox">
+                        <label for="hamburger-checkbox" class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <ul>
+                            <a href="#home"><li>Home</li></a>
+                            <a href="#about"><li>About</li></a>
+                            <a href="#course"><li>Course</li></a>
+                            <a href="#contact"><li>Contact</li></a>
+                            <div class="login-signup">
+                                <a href="pages/signup/">
+                                    <button class="button-signup type1">
+                                    <span class="btn-txt-signup">SignUp</span>
+                                </button>
+                                </a>
+
+                                <a href="pages/login/">
+                                    <button class="button-login">Login</button>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section id="home">
+                    <div class="container-home">
+                        <div class="home-break"></div>
+                        <div class="home-content-wrapper">
+                            <h5>EVERY CHILD YEARNS TO LEARN</h5>
+                            <h1>Making Your Childs <br> World Better</h1>
+                            <p>Replenish seasons may male hath fruit beast were seas saw you arrie said man beast whales his void unto last session for bite. Set have great you'll male grass yielding yielding man</p>
+
+                            <!-- BUTTON View Course -->
+                            <div class="btn-conteiner" onclick="scrollToCourse()">
+                                <a class="btn-content">
+                                    <span class="btn-title">VIEW COURSE</span>
+                                    <span class="icon-arrow">
+                                        <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                            <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                                            <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                                        </g>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- about -->
+                <section id="about">
+                    <div class="container-about">
+                        <div class="head-about">
+                            <h1>Awesome <br> Feature</h1>
+                            <p>Set have great you male grass yielding an yielding first their you're have called the abundantly fruit were man</p>
+                            <a href="#"><button class="read-button">read More</button></a>
+                        </div>
+                        <div class="card card-1">
+                            <div class="logo-card">
+                                <img src="images/about/icons8-future-64.png" alt="logo future">
+                            </div>
+                            <h1>Better Future</h1>
+                            <p>Set have great you male grasses yielding yielding first their to called deep abundantly Set have great you male</p>
+                        </div>
+                        <div class="card card-2">
+                            <div class="logo-card">
+                                <img src="images/about/icons8-trainer-50.png" alt="logo trainer">
+                            </div>
+                            <h1>Qualified Trainers</h1>
+                            <p>Set have great you male grasses yielding yielding first their to called deep abundantly Set have great you male</p>
+                        </div>
+                        <div class="card card-3">
+                            <div class="logo-card">
+                                <img src="images/about/icons8-job-50.png" alt="logo job">
+                            </div>
+                            <h1>Job Oppurtunity</h1>
+                            <p>Set have great you male grasses yielding yielding first their to called deep abundantly Set have great you male</p>
+                        </div>
+                    </div>
+                    <div class="container-about2">
+                        <div class="animate-container">
+                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                            <lottie-player src="https://lottie.host/219e0ae7-ef0d-4005-a78b-4ae03aca699d/m7p927TQyP.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                        </div>
+                        <div class="container-about2-content">
+                            <h5>ABOUT US</h5>
+                            <hr>
+                            <h1>Learning with Love and Laughter</h1>
+                            <p>Fifth saying upon divide divide rule for deep their female all hath brind Days and beast greater grass signs abundantly have greater also days years under brought moveth.</p>
+                            <span class="content-icon">
+                                <img src="images/about/about-2/icons8-edit-50.png" alt="edit logo">
+                                Him lights given i heaven second yielding seas gathered wear
+                            </span>
+                            <span class="content-icon">
+                                <img src="images/about/about-2/icons8-pencil-and-ruler-64.png" alt="pencil and ruler logo">
+                                Fly female them whales fly them day deep given night.
+                            </span>
+                            <a href="#"><button class="read-button">read More</button></a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- course -->
+                <section id="course">
+                    <div class="container-course">
+                        <h1>Special Course <br> <span class="info-course">click the cards</span></h1>
+                        <!-- card - 1 -->
+                        <div class="card-course-container">
+                            <div class="card-course">
+                                <img src="images/course/priscilla-du-preez-XkKCui44iM0-unsplash.jpg" alt="">
+                                <span class="course-card-content">
+                                    <h4>Web Development</h4>
+                                    <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                    <a href="#"><button class="read-button">read More</button></a>
+                                </span>
+                            </div>
+                            <!-- card - 2 -->
+                            <div class="card-course">
+                                <img src="images/course/kobu-agency-7okkFhxrxNw-unsplash.jpg" alt="">
+                                <span class="course-card-content">
+                                    <h4>Web UI/UX Design</h4>
+                                    <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                    <a href="#"><button class="read-button">read More</button></a>
+                                </span>
+                            </div>
+                            <!-- card - 3 -->
+                            <div class="card-course">
+                                <img src="images/course/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt="">
+                                <span class="course-card-content">
+                                    <h4>Wordpress Development</h4>
+                                    <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                    <a href="#"><button class="read-button">read More</button></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="container-reviews-out">
+                            <h1>What do our students say?</h1>
+                            <div class="reviews-container">
+                                <swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true" loop="true"
+                                autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                                    <swiper-slide><img src="images/Home/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt=""></swiper-slide>
+                                    <swiper-slide><img src="images/Home/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt=""></swiper-slide>
+                                    <swiper-slide><img src="images/Home/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt=""></swiper-slide>
+                                    <swiper-slide><img src="images/Home/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt=""></swiper-slide>
+                                    <swiper-slide><img src="images/Home/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt=""></swiper-slide>
+                                </swiper-container>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- contact -->
+                <section id="contact">
+                    <div class="container-contact">
+                        <h1>Contact Us</h1>
+                        <form>
+                            <div class="nama-contact isi-form">
+                                <label for="nama">Name *</label>
+                                <input type="text" name="nama" placeholder="Your Name" required>
+                            </div>
+                            <div class="email-contact isi-form">
+                                <label for="email">Email *</label>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="subject-contact isi-form">
+                                <label for="subject">Subject *</label>
+                                <input type="text" name="subject" placeholder="Subject Goes Here" required>
+                            </div>
+                            <div class="message-contact isi-form">
+                                <label for="message">Message *</label>
+                                <textarea name="message" cols="20" rows="5" placeholder="Your Message Goes Here" required></textarea>
+                            </div>
+                            <div class="contact-send-button">
+                                <button>
+                                    <div class="svg-wrapper-1">
+                                        <div class="svg-wrapper">
+                                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                                <path
+                                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <span>Send</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <!-- swiper js custom javascript -->
+        <script src="javascript/course/swiper-custom.js"></script>
+        <!-- swiperjs javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+        <!-- javascript loading -->
+        <script src="javascript/loading.js"></script>
+        <!-- home view course button js -->
+        <script src="javascript/home/button-view-course.js"></script>
+        <!-- navbar js -->
+        <script src="javascript/navbar.js"></script>
+    </body>
+</html>
