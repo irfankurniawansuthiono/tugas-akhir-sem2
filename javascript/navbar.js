@@ -9,37 +9,40 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Scroll spy navbar
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navbar');
+  const sections = document.querySelectorAll('section');
+  const windowHeight = window.innerHeight;
+  const quarterWindowHeight = windowHeight / 4;
+  const currentPos = window.scrollY + quarterWindowHeight;
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - navbar.offsetHeight;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
+    const navLink = navbar.querySelector(`a[href="#${sectionId}"]`);
+
+    if (currentPos >= sectionTop && currentPos < sectionTop + sectionHeight) {
+      navLink.classList.add('active');
+    } else {
+      navLink.classList.remove('active');
+    }
+  });
+});
+
 window.addEventListener('DOMContentLoaded', () => {
   const navbar = document.getElementById('navbar');
   const navLinks = navbar.querySelectorAll('a[href^="#"]');
   const sections = document.querySelectorAll('section');
 
-  // home langsung merah waktu pertama kali masuk website
+  // Tambahkan kelas 'active' pada tautan navigasi '#home'
   navLinks.forEach(link => {
     if (link.getAttribute('href') === '#home') {
       link.classList.add('active');
     }
   });
 
-  window.addEventListener('scroll', () => {
-    const currentPos = window.scrollY;
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - navbar.offsetHeight;
-      const sectionHeight = section.offsetHeight;
-      const sectionId = section.getAttribute('id');
-      const navLink = navbar.querySelector(`a[href="#${sectionId}"]`);
-
-      if (currentPos >= sectionTop && currentPos < sectionTop + sectionHeight) {
-        navLink.classList.add('active');
-      } else {
-        navLink.classList.remove('active');
-      }
-    });
-  });
-
-  // Menambahkan event listener ke setiap elemen li
+  // Event listener untuk smooth scroll saat tautan di klik
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -52,25 +55,20 @@ window.addEventListener('DOMContentLoaded', () => {
         behavior: 'smooth'
       });
 
-      // Menutup hamburger menu setelah mengklik tautan
+      // Tutup menu hamburger setelah mengklik tautan
       const hamburgerCheckbox = document.getElementById('hamburger-checkbox');
       hamburgerCheckbox.checked = false;
     });
   });
-});
 
-// Menutup hamburger menu saat mengklik di luar navigasi
-window.addEventListener('DOMContentLoaded', () => {
-  const navbar = document.getElementById('navbar');
-  const hamburgerCheckbox = document.getElementById('hamburger-checkbox');
-
-  // Menambahkan event listener ke dokumen
+  // Tutup menu hamburger saat mengklik di luar navigasi
   document.addEventListener('click', (event) => {
     const target = event.target;
 
-    // Mengecek apakah target yang diklik bukan bagian dari navigasi
     if (!navbar.contains(target)) {
+      const hamburgerCheckbox = document.getElementById('hamburger-checkbox');
       hamburgerCheckbox.checked = false;
     }
   });
 });
+
