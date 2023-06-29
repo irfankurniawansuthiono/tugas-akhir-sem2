@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
   const navbar = document.getElementById('navbar');
   const sections = document.querySelectorAll('section');
   const windowHeight = window.innerHeight;
-  const quarterWindowHeight = windowHeight / 2;
+  const quarterWindowHeight = windowHeight * 0.60;
   const currentPos = window.scrollY + quarterWindowHeight;
 
   sections.forEach(section => {
