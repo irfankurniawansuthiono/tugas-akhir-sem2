@@ -188,15 +188,15 @@ lottie-player{
 @media only screen and (min-width:800px){
     main .container-about2{
         padding: 0rem 3rem 4rem 3rem;
-        flex-direction: row;
+        flex-direction: row !important;
     }
+
+}
+@media only screen and (min-width:1000px){
     lottie-player {
         width: 500px;
         height: 500px;
     }
-}
-@media only screen and (min-width:1000px){
-
     .container-about2 .container-about2-content h5 {
         font-size: 2rem;
     }
