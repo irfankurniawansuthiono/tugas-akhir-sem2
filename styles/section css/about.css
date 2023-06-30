@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 /* UNIVERSAL CSS */
 *{
     scroll-behavior: smooth;
@@ -132,7 +132,7 @@ main .container-about{
         width: 20% !important;
     }
     .container-about .head-about h1{
-        font-size: 3.5rem;
+        font-size: 2.8rem;
         line-height: 4rem;
     }
 }

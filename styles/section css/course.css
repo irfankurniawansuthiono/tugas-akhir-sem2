@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 /* UNIVERSAL CSS */
 * {
     scroll-behavior: smooth;
@@ -6,7 +6,7 @@
 }
 /* read more button */
 .container-course .read-button {
-    padding: .5rem .5rem;
+    padding: .5rem;
     border-radius: 10px;
     background-color: whitesmoke;
     color: #252525;
@@ -125,7 +125,7 @@
 }
 @media only screen and (min-width: 500px){
     .container-course .read-button{
-        padding: .5rem 2rem;
+        padding: .5rem 1rem;
     }
     .container-course .card-course {
         width: 300px;

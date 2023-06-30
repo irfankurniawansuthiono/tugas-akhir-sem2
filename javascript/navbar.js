@@ -1,13 +1,27 @@
-// Scroll background color
 window.addEventListener('scroll', function() {
   const navbar = document.getElementById('navbar');
   const scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrolled > 20) {
-    navbar.classList.add('scrolled');
-  } else {
+  const isAtTop = scrolled === 0;
+
+  if (isAtTop) {
     navbar.classList.remove('scrolled');
+  } else {
+    navbar.classList.add('scrolled');
   }
 });
+
+window.addEventListener('load', function() {
+  const navbar = document.getElementById('navbar');
+  const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  const isAtTop = scrolled === 0;
+
+  if (isAtTop) {
+    navbar.classList.remove('scrolled');
+  } else {
+    navbar.classList.add('scrolled');
+  }
+});
+
 
 window.addEventListener('scroll', () => {
   const navbar = document.getElementById('navbar');

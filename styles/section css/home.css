@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 /* UNIVERSAL CSS */
 *{
   font-family: "Poppins", sans-serif;
@@ -25,7 +25,7 @@ main .container-home{
     background-size: cover;
     background-color: rgba(0,0,0,.7);
     background-blend-mode: darken;
-    background-image: url("../../images/home/andrew-neel-ute2XAFQU2I-unsplash.jpg");
+    background-image: url("../../images/Home/andrew-neel-ute2XAFQU2I-unsplash.jpg");
     background-blend-mode: darken;
 }
 main .container-home .home-content-wrapper{

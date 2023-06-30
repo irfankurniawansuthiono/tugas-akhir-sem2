@@ -1,15 +1,16 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap');
 
 .container-contact{
     padding: 4rem 2rem;
     background-color: whitesmoke;
+    font-family: "Poppins", sans-serif !important;
+}
+.container-contact .contact-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    font-family: "Poppins", sans-serif !important;
 }
 .container-contact h1{
     color: #353535;
@@ -26,6 +27,9 @@ form{
 }
 form label{
     font-weight: normal;
+}
+form label>.pink-req{
+    color: rgb(244, 42, 96);
 }
 form input{
     width: 100%;
@@ -49,6 +53,7 @@ form textarea{
     overflow: auto;
     border: 2px solid #353535;
     border-radius: 5px;
+    padding: .5rem;
 }
 form textarea:focus{
     outline: none;
@@ -131,9 +136,8 @@ form textarea:focus{
         width: 40%;
     }
 }
-@media only scren and (min-width:1000px){
+@media only screen and (min-width:1000px){
     .container-contact {
-        padding: 6rem 2rem !important;
-        border: 5px solid blue;
+        padding: 2rem 2rem ;
     }
 }

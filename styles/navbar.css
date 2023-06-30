@@ -24,10 +24,11 @@ header{
 }
 .navbar .logo h1{
     font-size: 2rem;
-    transition: all 0.5s ease-in-out;
+    color: rgb(244, 42, 96);
+    transition: all 0.3s ease-in-out;
 }
 .navbar .logo h1:hover{
-    color: rgba(244, 42, 96, 0.901);
+    color: whitesmoke;
 }
 .navbar .logo{
     display: flex;
@@ -71,7 +72,7 @@ header{
     z-index: 9999;
 }
 .navbar .checkbox-navbar .hamburger:hover {
-    background-color: rgba(244, 42, 96, 0.901);
+    background-color: rgb(244, 42, 96);
 }
 
 .navbar .checkbox-navbar #hamburger-checkbox:checked ~ label ~ ul{
@@ -88,7 +89,7 @@ header{
     border-radius: 40px;
 
 }
-ul li:hover{
+.navbar ul li:hover{
     background-color: rgba(245,245,245,.5);
 }
 .navbar ul a{
@@ -207,7 +208,7 @@ ul li:hover{
     -moz-box-shadow: 0px 7px 5px -1px rgba(0, 0, 0, 0.75);
 }
 .active{
-    background-color: rgba(244, 42, 96, 0.901);
+    background-color: rgb(244, 42, 96);
     border-radius: 40px;
 }
 /* media section */

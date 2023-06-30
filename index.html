@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BiimBeL</title>
+
+        <!-- icon -->
         <link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/icon/android-icon-72x72.png">
@@ -31,6 +33,9 @@
         <!-- css navbar -->
         <link rel="stylesheet" href="styles/navbar.css">
 
+        <!-- AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- section home css -->
         <link rel="stylesheet" href="styles/section css/home.css">
 
@@ -49,7 +54,7 @@
         <!-- swiper js css -->
         <link rel="stylesheet" href="styles/section css/swiperjs.css">
     </head>
-    <body>
+    <body style="width: 100%; box-sizing: border-box;">
         <div class="container">
             <header>
                 <div id="loading">
@@ -125,26 +130,26 @@
                 <!-- about -->
                 <section id="about">
                     <div class="container-about">
-                        <div class="head-about">
+                        <div class="head-about" data-aos="fade-right">
                             <h1>Awesome <br> Feature</h1>
                             <p>Set have great you male grass yielding an yielding first their you're have called the abundantly fruit were man</p>
                             <a href="#"><button class="read-button">read More</button></a>
                         </div>
-                        <div class="card card-1">
+                        <div class="card card-1" data-aos="fade-up" data-aos-delay="200">
                             <div class="logo-card">
                                 <img src="images/about/icons8-future-64.png" alt="logo future">
                             </div>
                             <h1>Better Future</h1>
                             <p>Set have great you male grasses yielding yielding first their to called deep abundantly Set have great you male</p>
                         </div>
-                        <div class="card card-2">
+                        <div class="card card-2" data-aos="fade-up" data-aos-delay="400">
                             <div class="logo-card">
                                 <img src="images/about/icons8-trainer-50.png" alt="logo trainer">
                             </div>
                             <h1>Qualified Trainers</h1>
                             <p>Set have great you male grasses yielding yielding first their to called deep abundantly Set have great you male</p>
                         </div>
-                        <div class="card card-3">
+                        <div class="card card-3" data-aos="fade-up" data-aos-delay="600">
                             <div class="logo-card">
                                 <img src="images/about/icons8-job-50.png" alt="logo job">
                             </div>
@@ -152,12 +157,12 @@
                             <p>Set have great you male grasses yielding yielding first their to called deep abundantly Set have great you male</p>
                         </div>
                         <div class="container-about2">
-                            <div class="animate-container">
+                            <div class="animate-container" data-aos="fade-down">
                                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player src="https://lottie.host/219e0ae7-ef0d-4005-a78b-4ae03aca699d/m7p927TQyP.json"
                                     background="transparent" speed="1" loop autoplay></lottie-player>
                             </div>
-                            <div class="container-about2-content">
+                            <div class="container-about2-content" data-aos="fade-down" data-aos-delay="200">
                                 <h5>ABOUT US</h5>
                                 <hr>
                                 <h1>Learning with Love and Laughter</h1>
@@ -180,9 +185,9 @@
                 <!-- course -->
                 <section id="course">
                     <div class="container-course">
-                        <h1>Special Course <br> <span class="info-course">click the cards</span></h1>
+                        <h1  data-aos="fade-up">Special Course <br> <span class="info-course">click the cards</span></h1>
                         <!-- card - 1 -->
-                        <div class="card-course-container">
+                        <div class="card-course-container"  data-aos="fade-up" data-aos-delay="200">
                             <div class="card-course">
                                 <img src="images/course/priscilla-du-preez-XkKCui44iM0-unsplash.jpg" alt="">
                                 <span class="course-card-content">
@@ -192,7 +197,7 @@
                                 </span>
                             </div>
                             <!-- card - 2 -->
-                            <div class="card-course">
+                            <div class="card-course"  data-aos="fade-up" data-aos-delay="400">
                                 <img src="images/course/kobu-agency-7okkFhxrxNw-unsplash.jpg" alt="">
                                 <span class="course-card-content">
                                     <h4>Web UI/UX Design</h4>
@@ -201,7 +206,7 @@
                                 </span>
                             </div>
                             <!-- card - 3 -->
-                            <div class="card-course">
+                            <div class="card-course"  data-aos="fade-up" data-aos-delay="600">
                                 <img src="images/course/dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt="">
                                 <span class="course-card-content">
                                     <h4>Wordpress Development</h4>
@@ -211,8 +216,8 @@
                             </div>
                         </div>
                         <div class="container-reviews-out">
-                            <h1>What do our students say?</h1>
-                            <div class="reviews-container">
+                            <h1  data-aos="fade-up">What do our students say?</h1>
+                            <div class="reviews-container"  data-aos="fade-up" data-aos-delay="200">
                                 <swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true" loop="true"
                                 autoplay-delay="2500" autoplay-disable-on-interaction="false">
                                     <swiper-slide>Review 1</swiper-slide>
@@ -229,7 +234,8 @@
                 <!-- contact -->
                 <section id="contact">
                     <div class="container-contact">
-                        <h1>Contact Us</h1>
+                        <div class="contact-wrapper" data-aos="fade-down">
+                            <h1>Contact Us</h1>
                         <form method="POST" data-netlify="true">
                             <div class="nama-contact isi-form">
                                 <label for="nama">Name <span class="pink-req">*</span></label>
@@ -269,19 +275,77 @@
             <footer>
                 <div class="footer-container">
                     <div class="footer-content">
-
+                        <div class="footer-title">
+                            <div class="footer-block-1">
+                                <h1>BiimBeL</h1>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="footer-link-wrapper">
+                            <!-- navbar -->
+                            <div class="footer-block-2">
+                                <ul class="explore">
+                                    <h5>Explore</h5>
+                                    <li><a onclick="scrollToHome()">Home</a></li>
+                                    <li><a onclick="scrollToAbout()">About</a></li>
+                                    <li><a onclick="scrollToCourse()">Course</a></li>
+                                    <li><a onclick="scrollToContact()">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- follow us -->
+                            <div class="footer-block-3">
+                                <ul class="follow-us">
+                                    <h5>Follow Us</h5>
+                                    <li><a href="#home">Instagram</a></li>
+                                    <li><a href="#course">Facebook</a></li>
+                                    <li><a href="#about">Twitter</a></li>
+                                </ul>
+                            </div>
+                            <!-- Contact us -->
+                            <div class="footer-block-4">
+                                <ul class="contact-us">
+                                    <h5>Contact Us</h5>
+                                    <li><span class="contact-us-title">Phones:</span>0772-998674 / 0823-909054</li>
+                                    <li><span class="contact-us-title">E-Mail:</span><a href="mailto:kurniawanmarc93@gmail.com">Kurniawanmarc93@gmail.com</a></li>
+                                    <li><span class="contact-us-title">technical Support:</span><a href="mailto:irfankurniawansoethiono@gmail.com">Irfankurniawansoethiono@gmail.com</a></li>
+                                </ul>
+                            </div>
+                            <!-- maps -->
+                            <div class="footer-block-5">
+                                <h5>Location</h5>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2592448917535!2d100.39399527389854!3d-0.9591827353538613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b982fd776c89%3A0x4e9e1c8dcc9c55fb!2sUniversitas%20Putra%20Indonesia%20%22YPTK%22!5e0!3m2!1sid!2sid!4v1688120246230!5m2!1sid!2sid"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright &copy BiimBeL 2023</p>
                 </div>
             </footer>
         </div>
+        <!-- footer navigation javascript -->
+        <script src="javascript/footer/footer.js"></script>
         <!-- swiper js custom javascript -->
         <script src="javascript/course/swiper-custom.js"></script>
+
         <!-- swiperjs javascript -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
         <!-- javascript loading -->
         <script src="javascript/loading.js"></script>
+
         <!-- home view course button js -->
         <script src="javascript/home/button-view-course.js"></script>
+
+        <!-- AOS script -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
         <!-- navbar js -->
         <script src="javascript/navbar.js"></script>
     </body>
