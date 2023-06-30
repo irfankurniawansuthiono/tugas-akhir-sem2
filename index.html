@@ -43,6 +43,9 @@
         <!-- section contact css -->
         <link rel="stylesheet" href="styles/section css/contact.css">
 
+        <!-- footer css -->
+        <link rel="stylesheet" href="styles/section css/footer.css">
+
         <!-- swiper js css -->
         <link rel="stylesheet" href="styles/section css/swiperjs.css">
     </head>
@@ -96,7 +99,6 @@
             <main>
                 <section id="home">
                     <div class="container-home">
-                        <div class="home-break"></div>
                         <div class="home-content-wrapper">
                             <h5>EVERY CHILD YEARNS TO LEARN</h5>
                             <h1>Making Your Childs <br> World Better</h1>
@@ -173,7 +175,6 @@
                             </div>
                         </div>
                     </div>
-
                 </section>
 
                 <!-- course -->
@@ -214,11 +215,11 @@
                             <div class="reviews-container">
                                 <swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true" loop="true"
                                 autoplay-delay="2500" autoplay-disable-on-interaction="false">
-                                    <swiper-slide><img src="images/home/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt=""></swiper-slide>
-                                    <swiper-slide><img src="images/home/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt=""></swiper-slide>
-                                    <swiper-slide><img src="images/home/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt=""></swiper-slide>
-                                    <swiper-slide><img src="images/home/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt=""></swiper-slide>
-                                    <swiper-slide><img src="images/home/andrew-neel-ute2XAFQU2I-unsplash.jpg" alt=""></swiper-slide>
+                                    <swiper-slide>Review 1</swiper-slide>
+                                    <swiper-slide>Review 2</swiper-slide>
+                                    <swiper-slide>Review 3</swiper-slide>
+                                    <swiper-slide>Review 4</swiper-slide>
+                                    <swiper-slide>Review 5</swiper-slide>
                                 </swiper-container>
                             </div>
                         </div>
@@ -231,19 +232,19 @@
                         <h1>Contact Us</h1>
                         <form method="POST" data-netlify="true">
                             <div class="nama-contact isi-form">
-                                <label for="nama">Name *</label>
+                                <label for="nama">Name <span class="pink-req">*</span></label>
                                 <input type="text" name="nama" placeholder="Your Name" required>
                             </div>
                             <div class="email-contact isi-form">
-                                <label for="email">Email *</label>
+                                <label for="email">Email <span class="pink-req">*</span></label>
                                 <input type="email" name="email" placeholder="Your Email" required>
                             </div>
                             <div class="subject-contact isi-form">
-                                <label for="subject">Subject *</label>
+                                <label for="subject">Subject <span class="pink-req">*</span></label>
                                 <input type="text" name="subject" placeholder="Subject Goes Here" required>
                             </div>
                             <div class="message-contact isi-form">
-                                <label for="message">Message *</label>
+                                <label for="message">Message <span class="pink-req">*</span></label>
                                 <textarea name="message" cols="20" rows="5" placeholder="Your Message Goes Here" required></textarea>
                             </div>
                             <div class="contact-send-button">
@@ -265,6 +266,13 @@
                     </div>
                 </section>
             </main>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-content">
+
+                    </div>
+                </div>
+            </footer>
         </div>
         <!-- swiper js custom javascript -->
         <script src="javascript/course/swiper-custom.js"></script>
